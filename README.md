@@ -11,7 +11,7 @@ You need to add a file named .babelrc to your project directory, and the content
     ]
 }
 ```
-At first, the only thing you need to remember is that **using "env" on preset**.
+At first, the only thing you need to remember is that **using "env" on presets**.
 
 **2. babel-cli** : When you are developing, you should install babel-cli on your computer by yarn or npm **Globally**.  
 It will provide you command like "babel" & "babel-node" to compile files.
@@ -49,7 +49,7 @@ npm install babel-polyfill --save
 
 # Usage
 
-## babel-cli
+### babel-cli
 
 If you want compile file by babel, you should use something like
 ```=bash
@@ -62,7 +62,7 @@ Also you can directly run js file with babel.
 babel-node src/index.js
 ```
 
-## Production
+### Production
 If you follow the step of Installation correctly, then after cloning your project, your client only need to use these command
 ```=bash
 yarn install --prod
