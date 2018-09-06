@@ -2,7 +2,7 @@
 
 ### Update of babel 7
 
-Because the release of babel 7, there are two main changes you should know.
+Because of the release of babel 7, there are two main changes you should know.
 
 1. No more babel-core, babel-cli and babel-preset-env.  
 Now babel 7 using **scope** to seperate different module of babel like @babel/core, @babel/cli, @babel/preset-env.  
@@ -26,10 +26,10 @@ You need to add a file named .babelrc to your project directory, and the content
 ```
 The only thing you need to remember is that **using "@babel/preset-env" on presets**.
 
-**2. @babel/cli & @babel/node** : When you are developing, you should install @babel/cli on your computer by yarn or npm **Globally**.  
-It will provide you command like "babel" and "babel-node" to compile files.
+**2. @babel/cli & @babel/node** : When you are developing, you should install @babel/cli on your computer by yarn or npm **Globally**. It will provide you command like "babel" and "babel-node" to compile files.
 
-**3. @babel/core & @babel/preset-env** : When you want to compile any file by babel, you should install @babel/core and @babel/preset-env first. They provide every thing you need to compile or excute a file. Be noticed that you should install it locally. (Actually, you even can't install them globally.)
+**3. @babel/core & @babel/preset-env** : When you want to compile any file by babel, you should install @babel/core and @babel/preset-env first. They provide everything you need to compile files.  
+Be noticed that you should install it locally. (Actually, you can't even install them globally.)
 
 **4. @babel/polyfill** : You should add it to your project dependency for your client. They will need it to use command "node" to run files that you compiled by babel.
 
@@ -37,10 +37,10 @@ More detail in chinese is [here](https://code.kpman.cc/2016/09/13/babel-%E7%9B%B
 
 # Installation
 
-The first you should do is put **.babelrc** file to your project directory, then continue following the step below.
+The first you should do is put **.babelrc** file to your project directory, then you can continue following the steps below.
 
 ### For Developer :
-Just like I mentioned, you should install **@babel/cli & @babel/node** on your computer by yarn or npm **Globally**.
+Just like I mentioned, you should install **@babel/cli & @babel/node** on your computer by yarn or npm **globally**.
 ```=bash
 yarn global add @babel/cli @babel/node
 // or
@@ -64,7 +64,7 @@ npm install babel-polyfill --save
 
 # Usage
 
-### @babel/cli
+### @babel/cli & @babel/node
 
 If you want compile file by babel, you should use something like:
 ```=bash
